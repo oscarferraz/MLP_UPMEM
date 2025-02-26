@@ -1,0 +1,13 @@
+All the versions on this folders implement Multi-DPU and Multi-tasklets implementations of Matrix multiplication.
+
+Sequential: Implements matrix multiplication sequentially on CPU only
+
+V0: Implements "baseline": Uses MRAM only, and the second matrix is column major. This means that sending the column blocks to the DPU is done in an ineficient way. Because we are sending chunks of lines, instead of sending blocks of line which is very ineficient. Also the padding with zeros must be done after each line instead of adding them in the rows bellow.
+
+V1: Implements second matrix as column major
+
+V2: Solves the NR_DPUS*NR_DPUS problem making the "grid" NR_DPUS1*NR_DPUS2
+
+V3: Implements WRAM. Not functional
+
+Note that the  code in MM_v3_non_func_draft is simmilar to V1 but there are some commented lines in the kdot_kernels.c that might be useful

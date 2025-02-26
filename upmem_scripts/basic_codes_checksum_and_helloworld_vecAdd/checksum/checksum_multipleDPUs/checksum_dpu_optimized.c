@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <perfcounter.h>
+#include <mram.h>
+#include <defs.h>
+#include <barrier.h>
+#include "common/common.h"
+
+BARRIER_INIT(my_barrier, NR_TASKLETS); //syncronization
+
+#define NR_ELEM_PER_TASKLETS (NR_ELEM_PER_DPU/NR_TASKLETS)
+#define CACHE_SIZE 32
+__mram uint32_t buffer[NR_ELEM_PER_DPU];// the buffer will be stored in WRAM if i dont specify it MRAM is the name given to the regular DRAM inside the pim chip
+//buffer in mram with data
+uint32_t checksums[NR_TASKLETS] = {0}; // variable for the checksum of each thread
+__dma_aligned uint32_t cache[NR_TASKLETS][CACHE_SIZE]; // cache in WRAM to perform transfer
+
+__host uint32_t checksum = 0;
+
+int main()
+{
+	//me() gets the id of the thread that is running
+	if(me() == 0)
+	{
+		perfcounter_config(COUNT_CYCLES, true);
+	}
+	barrier_wait(&my_barrier);
+	for(int i = me()*NR_ELEM_PER_TASKLETS; i < (me()+1)*NR_ELEM_PER_TASKLETS; i+=CACHE_SIZE)
+	{
+		int counter = 0;
+		mram_read(&buffer[i], &cache[me()][0], sizeof(uint32_t)*CACHE_SIZE);
+		checksums[me()] += compute_checksum(&cache[me()][0], CACHE_SIZE);
+	}
+	barrier_wait(&my_barrier);
+	if(me() == 0)
+	{
+		//uint32_t checksum = 5;
+		for(int i = 0; i < NR_TASKLETS; i++)
+		{
+			checksum += checksums[i];
+		}
+		perfcounter_t end_time = perfcounter_get();
+		printf ("checksum: 0x%x, number of cicles used: %lu, number of cicles per thread %f\n",checksum, end_time, (float)end_time/NR_ELEM_PER_DPU);
+	}
+	return 0;
+}

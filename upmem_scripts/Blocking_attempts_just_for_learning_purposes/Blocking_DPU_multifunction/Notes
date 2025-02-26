@@ -1,0 +1,1 @@
+This folder contains a way to split matrices for kernels that are executed elementwise, thus do not require blocking and the matrix can be split anywhere

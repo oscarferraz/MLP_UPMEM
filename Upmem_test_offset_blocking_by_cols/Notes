@@ -1,0 +1,1 @@
+This folder contains a test that I conducted to figure out on how to split a matrix in blocks composed of multiple columns send them to the DPU and print them

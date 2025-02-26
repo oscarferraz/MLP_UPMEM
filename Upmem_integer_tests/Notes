@@ -1,0 +1,14 @@
+This folder presents an MLP with fake weights and matrices in integer to assess speed only. Was used for preleminary testing and should be irrelevant.
+
+Sequential code in CPU and single dpu and multithread are implemented.
+
+For dpu dpu_copy_to was used so the data is sent to the DPU in a sequential manner. As it was said this is for perleminary testing only.
+
+mlp_host.c, mlp_dpu.c are for MLP implementation with dpu_copy_to, multithread, single dpu
+mlp_host2.c, mlp_dpu2.c are for testing the functions individually
+
+upmem_kernels2.c uses WRAM for KDOT (matrix multiplication), but no blocking is done, so the block in MRAM must be the same same as in WRAM
+
+upmem_kernels2_mram.c uses MRAM for all functions
+
+The sequential CPU code is pretty much straightforward

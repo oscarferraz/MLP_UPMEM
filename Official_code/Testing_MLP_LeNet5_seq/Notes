@@ -1,0 +1,1 @@
+This code implements inferences with fake values for testing purposes. It uses LeNet5-like fully connected layers for dimensions. It is done sequentially using the CPU 

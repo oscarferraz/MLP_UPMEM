@@ -1,0 +1,10 @@
+This code was used for testing purposes and come to conclusions.
+
+The matrices are copied to a single dpu in a sequential manner using dpu_copy_to, and multi-tasklet matrix multiplication is computed.
+
+3 cofigurations exist:
+-MRAM GEMM: MRAM is used
+-WRAM1 GEMM: Each mram_read read 1 line only
+-WRAM2 GEMM: Each mram_read reads maximum possible lines. (There is a limit on how many elements we can read at once).
+
+

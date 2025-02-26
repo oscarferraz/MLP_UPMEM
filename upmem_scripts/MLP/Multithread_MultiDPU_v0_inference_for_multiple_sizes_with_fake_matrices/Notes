@@ -1,0 +1,12 @@
+This code implements Multi-DPU and Multi-tasklet parallel code to perform infenrece on fake matrices for speed testing purposes.
+
+The weights are generated randomly.
+
+Key takeaways:
+
+V0:
+-The seconde matrix in not transposed in this version and the blocks and padding for this matrix are columnwise
+
+-No WRAM
+
+-NR_DPUS*NR_DPUS is used so the "grid" must be square
