@@ -1,0 +1,12 @@
+This code implements Multi-DPU and Multi-tasklet parallel code to perform fake inference in the FCN part of LeNet5.
+
+It uses fake weights, and fake matrices
+
+Key takeaways:
+
+V1:
+-The seconde matrix in transposed in this version and the blocks and padding for this matrix are row-wise.
+
+-No WRAM
+
+-NR_DPUS1*NR_DPUS2 is used so the "grid" can have any dimentions. This is usefull for workload balance

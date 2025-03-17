@@ -1,0 +1,722 @@
+L1 size=43840 bytes
+L2 size=25216 bytes
+L3 size=516 bytes
+Number of DPUs allocated=2556
+L1 time (ms): 334.759000	L2 time (ms): 213.669000	L3 time (ms): 22.829000	
+[31m[1m*** WRAM write ***[0m
+   size   	  number  	 bandwidth  	 duration 	function names
+[92m[1m/dev/dpu_rank0:[0m
+   2.690MB	    1     	  94.034MB/s	  28.604ms	dpu_copy_to_wram_for_rank
+  24.000KB	    1     	  12.304MB/s	   1.905ms	dpu_copy_to_wram_64dpus
+   2.625MB	    1     	  14.416MB/s	 182.090ms	dpu_copy_to_wram_64dpus
+   1.553MB	    1     	  78.449MB/s	  19.796ms	dpu_copy_to_wram_for_rank
+  28.000KB	    1     	  10.937MB/s	   2.500ms	dpu_copy_to_wram_64dpus
+  16.000KB	    2     	   8.008MB/s	   1.951ms	dpu_copy_to_wram_64dpus
+  52.750KB	    1     	  67.555MB/s	 762.539us	dpu_copy_to_wram_for_rank
+   1.500MB	    1     	  13.861MB/s	 108.220ms	dpu_copy_to_wram_64dpus
+[92m[1m/dev/dpu_rank1:[0m
+   2.625MB	    1     	  11.890MB/s	 220.765ms	dpu_copy_to_wram_64dpus
+   1.553MB	    1     	  81.552MB/s	  19.043ms	dpu_copy_to_wram_for_rank
+   2.690MB	    1     	  94.107MB/s	  28.581ms	dpu_copy_to_wram_for_rank
+  52.750KB	    1     	  66.538MB/s	 774.205us	dpu_copy_to_wram_for_rank
+  24.000KB	    1     	  14.460MB/s	   1.621ms	dpu_copy_to_wram_64dpus
+  16.000KB	    2     	   7.876MB/s	   1.984ms	dpu_copy_to_wram_64dpus
+   1.500MB	    1     	  13.690MB/s	 109.571ms	dpu_copy_to_wram_64dpus
+  28.000KB	    1     	  13.553MB/s	   2.018ms	dpu_copy_to_wram_64dpus
+[92m[1m/dev/dpu_rank10:[0m
+  16.000KB	    2     	  10.037MB/s	   1.557ms	dpu_copy_to_wram_64dpus
+   1.553MB	    1     	  76.683MB/s	  20.252ms	dpu_copy_to_wram_for_rank
+   2.625MB	    1     	  13.810MB/s	 190.083ms	dpu_copy_to_wram_64dpus
+   1.500MB	    1     	  13.775MB/s	 108.897ms	dpu_copy_to_wram_64dpus
+  28.000KB	    1     	  10.370MB/s	   2.637ms	dpu_copy_to_wram_64dpus
+  24.000KB	    1     	  13.788MB/s	   1.700ms	dpu_copy_to_wram_64dpus
+   2.690MB	    1     	  61.667MB/s	  43.617ms	dpu_copy_to_wram_for_rank
+  52.750KB	    1     	  66.948MB/s	 769.460us	dpu_copy_to_wram_for_rank
+[92m[1m/dev/dpu_rank11:[0m
+   1.553MB	    1     	  77.299MB/s	  20.091ms	dpu_copy_to_wram_for_rank
+  52.750KB	    1     	  66.594MB/s	 773.553us	dpu_copy_to_wram_for_rank
+   2.690MB	    1     	  98.571MB/s	  27.287ms	dpu_copy_to_wram_for_rank
+  16.000KB	    2     	   7.978MB/s	   1.959ms	dpu_copy_to_wram_64dpus
+  24.000KB	    1     	  10.984MB/s	   2.134ms	dpu_copy_to_wram_64dpus
+   1.500MB	    1     	  13.948MB/s	 107.546ms	dpu_copy_to_wram_64dpus
+  28.000KB	    1     	  10.973MB/s	   2.492ms	dpu_copy_to_wram_64dpus
+   2.625MB	    1     	  14.515MB/s	 180.849ms	dpu_copy_to_wram_64dpus
+[92m[1m/dev/dpu_rank12:[0m
+  28.000KB	    1     	  13.584MB/s	   2.013ms	dpu_copy_to_wram_64dpus
+  24.000KB	    1     	  13.784MB/s	   1.700ms	dpu_copy_to_wram_64dpus
+   1.553MB	    1     	  76.894MB/s	  20.196ms	dpu_copy_to_wram_for_rank
+  16.000KB	    2     	   7.888MB/s	   1.981ms	dpu_copy_to_wram_64dpus
+  52.750KB	    1     	  66.989MB/s	 768.985us	dpu_copy_to_wram_for_rank
+   1.500MB	    1     	  13.577MB/s	 110.483ms	dpu_copy_to_wram_64dpus
+   2.625MB	    1     	  14.358MB/s	 182.825ms	dpu_copy_to_wram_64dpus
+   2.690MB	    1     	  64.381MB/s	  41.778ms	dpu_copy_to_wram_for_rank
+[92m[1m/dev/dpu_rank13:[0m
+  16.000KB	    2     	   9.035MB/s	   1.729ms	dpu_copy_to_wram_64dpus
+  24.000KB	    1     	  14.111MB/s	   1.661ms	dpu_copy_to_wram_64dpus
+   1.500MB	    1     	  13.939MB/s	 107.612ms	dpu_copy_to_wram_64dpus
+   2.625MB	    1     	   9.651MB/s	 271.996ms	dpu_copy_to_wram_64dpus
+   2.690MB	    1     	  85.179MB/s	  31.577ms	dpu_copy_to_wram_for_rank
+   1.553MB	    1     	  80.355MB/s	  19.327ms	dpu_copy_to_wram_for_rank
+  52.750KB	    1     	 103.603MB/s	 497.222us	dpu_copy_to_wram_for_rank
+  28.000KB	    1     	  11.171MB/s	   2.448ms	dpu_copy_to_wram_64dpus
+[92m[1m/dev/dpu_rank14:[0m
+   2.648MB	    1     	 102.317MB/s	  25.877ms	dpu_copy_to_wram_for_rank
+  23.625KB	    1     	  14.239MB/s	   1.620ms	dpu_copy_to_wram_63dpus
+   1.477MB	    1     	  14.093MB/s	 104.770ms	dpu_copy_to_wram_63dpus
+  15.750KB	    2     	   7.828MB/s	   1.965ms	dpu_copy_to_wram_63dpus
+   2.584MB	    1     	  14.367MB/s	 179.859ms	dpu_copy_to_wram_63dpus
+  27.562KB	    1     	  11.133MB/s	   2.418ms	dpu_copy_to_wram_63dpus
+  51.926KB	    1     	  63.354MB/s	 800.406us	dpu_copy_to_wram_for_rank
+   1.529MB	    1     	  92.786MB/s	  16.476ms	dpu_copy_to_wram_for_rank
+[92m[1m/dev/dpu_rank15:[0m
+  28.000KB	    1     	   8.934MB/s	   3.061ms	dpu_copy_to_wram_64dpus
+  16.000KB	    2     	   8.094MB/s	   1.930ms	dpu_copy_to_wram_64dpus
+   1.553MB	    1     	  78.029MB/s	  19.903ms	dpu_copy_to_wram_for_rank
+  24.000KB	    1     	  14.121MB/s	   1.660ms	dpu_copy_to_wram_64dpus
+  52.750KB	    1     	  68.010MB/s	 757.446us	dpu_copy_to_wram_for_rank
+   1.500MB	    1     	  14.398MB/s	 104.184ms	dpu_copy_to_wram_64dpus
+   2.625MB	    1     	   9.755MB/s	 269.087ms	dpu_copy_to_wram_64dpus
+   2.690MB	    1     	  64.732MB/s	  41.551ms	dpu_copy_to_wram_for_rank
+[92m[1m/dev/dpu_rank16:[0m
+   2.625MB	    1     	  14.030MB/s	 187.102ms	dpu_copy_to_wram_64dpus
+  28.000KB	    1     	  11.069MB/s	   2.470ms	dpu_copy_to_wram_64dpus
+  52.750KB	    1     	  76.889MB/s	 669.971us	dpu_copy_to_wram_for_rank
+  16.000KB	    2     	   7.864MB/s	   1.987ms	dpu_copy_to_wram_64dpus
+   2.690MB	    1     	  90.225MB/s	  29.811ms	dpu_copy_to_wram_for_rank
+   1.553MB	    1     	  76.594MB/s	  20.275ms	dpu_copy_to_wram_for_rank
+  24.000KB	    1     	  14.108MB/s	   1.661ms	dpu_copy_to_wram_64dpus
+   1.500MB	    1     	  14.291MB/s	 104.963ms	dpu_copy_to_wram_64dpus
+[92m[1m/dev/dpu_rank17:[0m
+  23.625KB	    1     	  13.060MB/s	   1.767ms	dpu_copy_to_wram_63dpus
+  51.926KB	    1     	  63.918MB/s	 793.341us	dpu_copy_to_wram_for_rank
+   2.648MB	    1     	  97.612MB/s	  27.124ms	dpu_copy_to_wram_for_rank
+  27.562KB	    1     	  10.486MB/s	   2.567ms	dpu_copy_to_wram_63dpus
+   1.477MB	    1     	  13.295MB/s	 111.062ms	dpu_copy_to_wram_63dpus
+  15.750KB	    2     	   7.685MB/s	   2.001ms	dpu_copy_to_wram_63dpus
+   2.584MB	    1     	  11.537MB/s	 223.981ms	dpu_copy_to_wram_63dpus
+   1.529MB	    1     	  74.447MB/s	  20.534ms	dpu_copy_to_wram_for_rank
+[92m[1m/dev/dpu_rank18:[0m
+   2.625MB	    1     	  14.512MB/s	 180.881ms	dpu_copy_to_wram_64dpus
+   2.690MB	    1     	  90.135MB/s	  29.841ms	dpu_copy_to_wram_for_rank
+  28.000KB	    1     	   8.684MB/s	   3.149ms	dpu_copy_to_wram_64dpus
+   1.500MB	    1     	  14.097MB/s	 106.408ms	dpu_copy_to_wram_64dpus
+  52.750KB	    1     	  65.613MB/s	 785.111us	dpu_copy_to_wram_for_rank
+  24.000KB	    1     	  10.591MB/s	   2.213ms	dpu_copy_to_wram_64dpus
+  16.000KB	    2     	   9.236MB/s	   1.692ms	dpu_copy_to_wram_64dpus
+   1.553MB	    1     	  78.742MB/s	  19.722ms	dpu_copy_to_wram_for_rank
+[92m[1m/dev/dpu_rank19:[0m
+   1.553MB	    1     	 103.189MB/s	  15.050ms	dpu_copy_to_wram_for_rank
+  16.000KB	    2     	   7.950MB/s	   1.965ms	dpu_copy_to_wram_64dpus
+   2.690MB	    1     	  95.614MB/s	  28.131ms	dpu_copy_to_wram_for_rank
+   2.625MB	    1     	  14.392MB/s	 182.389ms	dpu_copy_to_wram_64dpus
+   1.500MB	    1     	  13.572MB/s	 110.521ms	dpu_copy_to_wram_64dpus
+  28.000KB	    1     	  10.589MB/s	   2.582ms	dpu_copy_to_wram_64dpus
+  24.000KB	    1     	  11.061MB/s	   2.119ms	dpu_copy_to_wram_64dpus
+  52.750KB	    1     	  71.551MB/s	 719.956us	dpu_copy_to_wram_for_rank
+[92m[1m/dev/dpu_rank2:[0m
+   2.690MB	    1     	  90.012MB/s	  29.881ms	dpu_copy_to_wram_for_rank
+  28.000KB	    1     	   8.685MB/s	   3.148ms	dpu_copy_to_wram_64dpus
+   2.625MB	    1     	  14.485MB/s	 181.222ms	dpu_copy_to_wram_64dpus
+  16.000KB	    2     	   8.777MB/s	   1.780ms	dpu_copy_to_wram_64dpus
+   1.500MB	    1     	  14.026MB/s	 106.945ms	dpu_copy_to_wram_64dpus
+   1.553MB	    1     	 112.760MB/s	  13.772ms	dpu_copy_to_wram_for_rank
+  52.750KB	    1     	  66.607MB/s	 773.398us	dpu_copy_to_wram_for_rank
+  24.000KB	    1     	  11.671MB/s	   2.008ms	dpu_copy_to_wram_64dpus
+[92m[1m/dev/dpu_rank20:[0m
+   2.625MB	    1     	  14.053MB/s	 186.791ms	dpu_copy_to_wram_64dpus
+  24.000KB	    1     	  11.997MB/s	   1.954ms	dpu_copy_to_wram_64dpus
+  52.750KB	    1     	  67.598MB/s	 762.063us	dpu_copy_to_wram_for_rank
+  16.000KB	    2     	   8.004MB/s	   1.952ms	dpu_copy_to_wram_64dpus
+   2.690MB	    1     	  89.237MB/s	  30.141ms	dpu_copy_to_wram_for_rank
+   1.553MB	    1     	  79.774MB/s	  19.467ms	dpu_copy_to_wram_for_rank
+   1.500MB	    1     	  13.391MB/s	 112.014ms	dpu_copy_to_wram_64dpus
+  28.000KB	    1     	  12.170MB/s	   2.247ms	dpu_copy_to_wram_64dpus
+[92m[1m/dev/dpu_rank21:[0m
+  52.750KB	    1     	  66.709MB/s	 772.209us	dpu_copy_to_wram_for_rank
+   2.625MB	    1     	  14.224MB/s	 184.541ms	dpu_copy_to_wram_64dpus
+   1.500MB	    1     	  15.115MB/s	  99.237ms	dpu_copy_to_wram_64dpus
+  24.000KB	    1     	  14.493MB/s	   1.617ms	dpu_copy_to_wram_64dpus
+   2.690MB	    1     	  91.930MB/s	  29.258ms	dpu_copy_to_wram_for_rank
+  16.000KB	    2     	   6.312MB/s	   2.475ms	dpu_copy_to_wram_64dpus
+   1.553MB	    1     	  79.825MB/s	  19.455ms	dpu_copy_to_wram_for_rank
+  28.000KB	    1     	  13.408MB/s	   2.039ms	dpu_copy_to_wram_64dpus
+[92m[1m/dev/dpu_rank22:[0m
+  24.000KB	    1     	   9.014MB/s	   2.600ms	dpu_copy_to_wram_64dpus
+   1.500MB	    1     	  14.067MB/s	 106.630ms	dpu_copy_to_wram_64dpus
+  16.000KB	    2     	   6.319MB/s	   2.473ms	dpu_copy_to_wram_64dpus
+   1.553MB	    1     	  81.653MB/s	  19.019ms	dpu_copy_to_wram_for_rank
+   2.625MB	    1     	  14.596MB/s	 179.847ms	dpu_copy_to_wram_64dpus
+  52.750KB	    1     	  67.289MB/s	 765.563us	dpu_copy_to_wram_for_rank
+   2.690MB	    1     	 112.002MB/s	  24.015ms	dpu_copy_to_wram_for_rank
+  28.000KB	    1     	  12.950MB/s	   2.111ms	dpu_copy_to_wram_64dpus
+[92m[1m/dev/dpu_rank23:[0m
+   2.690MB	    1     	  93.560MB/s	  28.748ms	dpu_copy_to_wram_for_rank
+  28.000KB	    1     	  14.163MB/s	   1.931ms	dpu_copy_to_wram_64dpus
+   1.553MB	    1     	  79.681MB/s	  19.490ms	dpu_copy_to_wram_for_rank
+  52.750KB	    1     	  69.101MB/s	 745.480us	dpu_copy_to_wram_for_rank
+   1.500MB	    1     	  14.485MB/s	 103.555ms	dpu_copy_to_wram_64dpus
+  16.000KB	    2     	   8.033MB/s	   1.945ms	dpu_copy_to_wram_64dpus
+  24.000KB	    1     	  12.191MB/s	   1.923ms	dpu_copy_to_wram_64dpus
+   2.625MB	    1     	  11.195MB/s	 234.481ms	dpu_copy_to_wram_64dpus
+[92m[1m/dev/dpu_rank24:[0m
+   1.553MB	    1     	  77.442MB/s	  20.054ms	dpu_copy_to_wram_for_rank
+  16.000KB	    2     	   8.528MB/s	   1.832ms	dpu_copy_to_wram_64dpus
+   1.500MB	    1     	  13.155MB/s	 114.023ms	dpu_copy_to_wram_64dpus
+  24.000KB	    1     	  14.031MB/s	   1.670ms	dpu_copy_to_wram_64dpus
+  52.750KB	    1     	  67.727MB/s	 760.612us	dpu_copy_to_wram_for_rank
+   2.690MB	    1     	 109.618MB/s	  24.537ms	dpu_copy_to_wram_for_rank
+  28.000KB	    1     	  12.441MB/s	   2.198ms	dpu_copy_to_wram_64dpus
+   2.625MB	    1     	   9.681MB/s	 271.144ms	dpu_copy_to_wram_64dpus
+[92m[1m/dev/dpu_rank25:[0m
+   2.690MB	    1     	 120.883MB/s	  22.250ms	dpu_copy_to_wram_for_rank
+   2.625MB	    1     	  15.123MB/s	 173.580ms	dpu_copy_to_wram_64dpus
+  16.000KB	    2     	   8.638MB/s	   1.809ms	dpu_copy_to_wram_64dpus
+  28.000KB	    1     	  10.200MB/s	   2.681ms	dpu_copy_to_wram_64dpus
+   1.500MB	    1     	  13.589MB/s	 110.386ms	dpu_copy_to_wram_64dpus
+  24.000KB	    1     	  13.651MB/s	   1.717ms	dpu_copy_to_wram_64dpus
+   1.553MB	    1     	  76.294MB/s	  20.355ms	dpu_copy_to_wram_for_rank
+  52.750KB	    1     	  68.797MB/s	 748.783us	dpu_copy_to_wram_for_rank
+[92m[1m/dev/dpu_rank26:[0m
+  52.750KB	    1     	  67.592MB/s	 762.128us	dpu_copy_to_wram_for_rank
+  28.000KB	    1     	  10.316MB/s	   2.651ms	dpu_copy_to_wram_64dpus
+  24.000KB	    1     	  12.246MB/s	   1.914ms	dpu_copy_to_wram_64dpus
+   2.625MB	    1     	  12.379MB/s	 212.057ms	dpu_copy_to_wram_64dpus
+   2.690MB	    1     	  77.017MB/s	  34.923ms	dpu_copy_to_wram_for_rank
+  16.000KB	    2     	   8.610MB/s	   1.815ms	dpu_copy_to_wram_64dpus
+   1.500MB	    1     	  14.093MB/s	 106.437ms	dpu_copy_to_wram_64dpus
+   1.553MB	    1     	  77.748MB/s	  19.974ms	dpu_copy_to_wram_for_rank
+[92m[1m/dev/dpu_rank27:[0m
+  23.625KB	    1     	   9.495MB/s	   2.430ms	dpu_copy_to_wram_63dpus
+  51.926KB	    1     	 117.769MB/s	 430.579us	dpu_copy_to_wram_for_rank
+   2.648MB	    1     	  89.436MB/s	  29.604ms	dpu_copy_to_wram_for_rank
+   1.477MB	    1     	  14.027MB/s	 105.265ms	dpu_copy_to_wram_63dpus
+  15.750KB	    2     	   8.147MB/s	   1.888ms	dpu_copy_to_wram_63dpus
+   2.584MB	    1     	  14.325MB/s	 180.389ms	dpu_copy_to_wram_63dpus
+   1.529MB	    1     	  76.897MB/s	  19.880ms	dpu_copy_to_wram_for_rank
+  27.562KB	    1     	   9.154MB/s	   2.940ms	dpu_copy_to_wram_63dpus
+[92m[1m/dev/dpu_rank28:[0m
+   1.553MB	    1     	  80.094MB/s	  19.389ms	dpu_copy_to_wram_for_rank
+   2.690MB	    1     	 120.308MB/s	  22.357ms	dpu_copy_to_wram_for_rank
+  28.000KB	    1     	   8.858MB/s	   3.087ms	dpu_copy_to_wram_64dpus
+  52.750KB	    1     	  84.540MB/s	 609.341us	dpu_copy_to_wram_for_rank
+  24.000KB	    1     	   9.767MB/s	   2.400ms	dpu_copy_to_wram_64dpus
+   1.500MB	    1     	  12.477MB/s	 120.224ms	dpu_copy_to_wram_64dpus
+  16.000KB	    2     	   8.139MB/s	   1.920ms	dpu_copy_to_wram_64dpus
+   2.625MB	    1     	  14.498MB/s	 181.065ms	dpu_copy_to_wram_64dpus
+[92m[1m/dev/dpu_rank29:[0m
+  16.000KB	    2     	  10.225MB/s	   1.528ms	dpu_copy_to_wram_64dpus
+   2.625MB	    1     	  14.669MB/s	 178.945ms	dpu_copy_to_wram_64dpus
+  52.750KB	    1     	  70.240MB/s	 733.396us	dpu_copy_to_wram_for_rank
+  28.000KB	    1     	  13.516MB/s	   2.023ms	dpu_copy_to_wram_64dpus
+   2.690MB	    1     	 101.906MB/s	  26.394ms	dpu_copy_to_wram_for_rank
+   1.553MB	    1     	  79.965MB/s	  19.421ms	dpu_copy_to_wram_for_rank
+  24.000KB	    1     	   9.708MB/s	   2.414ms	dpu_copy_to_wram_64dpus
+   1.500MB	    1     	  13.871MB/s	 108.140ms	dpu_copy_to_wram_64dpus
+[92m[1m/dev/dpu_rank3:[0m
+   1.500MB	    1     	   8.468MB/s	 177.134ms	dpu_copy_to_wram_64dpus
+  16.000KB	    2     	   7.671MB/s	   2.037ms	dpu_copy_to_wram_64dpus
+  52.750KB	    1     	  64.715MB/s	 796.005us	dpu_copy_to_wram_for_rank
+   2.690MB	    1     	  83.518MB/s	  32.205ms	dpu_copy_to_wram_for_rank
+  28.000KB	    1     	   8.690MB/s	   3.147ms	dpu_copy_to_wram_64dpus
+   1.553MB	    1     	  78.437MB/s	  19.799ms	dpu_copy_to_wram_for_rank
+   2.625MB	    1     	  13.281MB/s	 197.654ms	dpu_copy_to_wram_64dpus
+  24.000KB	    1     	  12.807MB/s	   1.830ms	dpu_copy_to_wram_64dpus
+[92m[1m/dev/dpu_rank30:[0m
+   1.500MB	    1     	   9.638MB/s	 155.632ms	dpu_copy_to_wram_64dpus
+   2.690MB	    1     	  91.928MB/s	  29.259ms	dpu_copy_to_wram_for_rank
+  28.000KB	    1     	   9.011MB/s	   3.034ms	dpu_copy_to_wram_64dpus
+  16.000KB	    2     	   7.939MB/s	   1.968ms	dpu_copy_to_wram_64dpus
+   1.553MB	    1     	  55.876MB/s	  27.793ms	dpu_copy_to_wram_for_rank
+   2.625MB	    1     	   9.977MB/s	 263.113ms	dpu_copy_to_wram_64dpus
+  52.750KB	    1     	  68.674MB/s	 750.119us	dpu_copy_to_wram_for_rank
+  24.000KB	    1     	   9.496MB/s	   2.468ms	dpu_copy_to_wram_64dpus
+[92m[1m/dev/dpu_rank31:[0m
+   1.477MB	    1     	  12.817MB/s	 115.200ms	dpu_copy_to_wram_63dpus
+   1.529MB	    1     	 116.019MB/s	  13.176ms	dpu_copy_to_wram_for_rank
+   2.584MB	    1     	   9.534MB/s	 271.028ms	dpu_copy_to_wram_63dpus
+  27.562KB	    1     	   9.912MB/s	   2.716ms	dpu_copy_to_wram_63dpus
+  23.625KB	    1     	   9.293MB/s	   2.483ms	dpu_copy_to_wram_63dpus
+  51.926KB	    1     	  64.403MB/s	 787.362us	dpu_copy_to_wram_for_rank
+  15.750KB	    2     	   7.741MB/s	   1.987ms	dpu_copy_to_wram_63dpus
+   2.648MB	    1     	  68.292MB/s	  38.770ms	dpu_copy_to_wram_for_rank
+[92m[1m/dev/dpu_rank32:[0m
+  24.000KB	    1     	   9.540MB/s	   2.457ms	dpu_copy_to_wram_64dpus
+  28.000KB	    1     	   9.198MB/s	   2.973ms	dpu_copy_to_wram_64dpus
+   2.625MB	    1     	  15.116MB/s	 173.658ms	dpu_copy_to_wram_64dpus
+   2.690MB	    1     	  89.459MB/s	  30.066ms	dpu_copy_to_wram_for_rank
+   1.553MB	    1     	  77.994MB/s	  19.911ms	dpu_copy_to_wram_for_rank
+  52.750KB	    1     	  65.677MB/s	 784.344us	dpu_copy_to_wram_for_rank
+   1.500MB	    1     	  15.017MB/s	  99.885ms	dpu_copy_to_wram_64dpus
+  16.000KB	    2     	  10.246MB/s	   1.525ms	dpu_copy_to_wram_64dpus
+[92m[1m/dev/dpu_rank33:[0m
+   1.500MB	    1     	  10.803MB/s	 138.852ms	dpu_copy_to_wram_64dpus
+   2.690MB	    1     	  92.249MB/s	  29.157ms	dpu_copy_to_wram_for_rank
+  28.000KB	    1     	   9.806MB/s	   2.789ms	dpu_copy_to_wram_64dpus
+  52.750KB	    1     	  66.836MB/s	 770.748us	dpu_copy_to_wram_for_rank
+  16.000KB	    2     	   7.962MB/s	   1.963ms	dpu_copy_to_wram_64dpus
+   1.553MB	    1     	 121.438MB/s	  12.788ms	dpu_copy_to_wram_for_rank
+  24.000KB	    1     	  12.203MB/s	   1.921ms	dpu_copy_to_wram_64dpus
+   2.625MB	    1     	  14.067MB/s	 186.612ms	dpu_copy_to_wram_64dpus
+[92m[1m/dev/dpu_rank34:[0m
+   2.690MB	    1     	  92.428MB/s	  29.100ms	dpu_copy_to_wram_for_rank
+   1.553MB	    1     	  64.548MB/s	  24.059ms	dpu_copy_to_wram_for_rank
+  52.750KB	    1     	  69.827MB/s	 737.734us	dpu_copy_to_wram_for_rank
+   1.500MB	    1     	   9.924MB/s	 151.154ms	dpu_copy_to_wram_64dpus
+  28.000KB	    1     	  13.063MB/s	   2.093ms	dpu_copy_to_wram_64dpus
+   2.625MB	    1     	   9.940MB/s	 264.074ms	dpu_copy_to_wram_64dpus
+  16.000KB	    2     	   8.170MB/s	   1.912ms	dpu_copy_to_wram_64dpus
+  24.000KB	    1     	  14.430MB/s	   1.624ms	dpu_copy_to_wram_64dpus
+[92m[1m/dev/dpu_rank35:[0m
+  28.000KB	    1     	  12.885MB/s	   2.122ms	dpu_copy_to_wram_64dpus
+  52.750KB	    1     	 117.318MB/s	 439.095us	dpu_copy_to_wram_for_rank
+  16.000KB	    2     	  13.920MB/s	   1.123ms	dpu_copy_to_wram_64dpus
+  24.000KB	    1     	  14.318MB/s	   1.637ms	dpu_copy_to_wram_64dpus
+   1.500MB	    1     	   9.746MB/s	 153.912ms	dpu_copy_to_wram_64dpus
+   1.553MB	    1     	  80.522MB/s	  19.286ms	dpu_copy_to_wram_for_rank
+   2.625MB	    1     	  10.378MB/s	 252.945ms	dpu_copy_to_wram_64dpus
+   2.690MB	    1     	  65.156MB/s	  41.281ms	dpu_copy_to_wram_for_rank
+[92m[1m/dev/dpu_rank36:[0m
+   2.625MB	    1     	   9.510MB/s	 276.029ms	dpu_copy_to_wram_64dpus
+   2.690MB	    1     	  89.557MB/s	  30.033ms	dpu_copy_to_wram_for_rank
+   1.553MB	    1     	 102.565MB/s	  15.141ms	dpu_copy_to_wram_for_rank
+   1.500MB	    1     	   9.727MB/s	 154.211ms	dpu_copy_to_wram_64dpus
+  28.000KB	    1     	  14.172MB/s	   1.929ms	dpu_copy_to_wram_64dpus
+  24.000KB	    1     	  14.367MB/s	   1.631ms	dpu_copy_to_wram_64dpus
+  16.000KB	    2     	  11.184MB/s	   1.397ms	dpu_copy_to_wram_64dpus
+  52.750KB	    1     	  70.428MB/s	 731.437us	dpu_copy_to_wram_for_rank
+[92m[1m/dev/dpu_rank37:[0m
+   1.553MB	    1     	  85.729MB/s	  18.115ms	dpu_copy_to_wram_for_rank
+   2.690MB	    1     	  91.654MB/s	  29.346ms	dpu_copy_to_wram_for_rank
+  16.000KB	    2     	  10.460MB/s	   1.494ms	dpu_copy_to_wram_64dpus
+  28.000KB	    1     	  13.230MB/s	   2.067ms	dpu_copy_to_wram_64dpus
+  52.750KB	    1     	 119.572MB/s	 430.818us	dpu_copy_to_wram_for_rank
+  24.000KB	    1     	  14.188MB/s	   1.652ms	dpu_copy_to_wram_64dpus
+   2.625MB	    1     	  10.718MB/s	 244.911ms	dpu_copy_to_wram_64dpus
+   1.500MB	    1     	  10.769MB/s	 139.294ms	dpu_copy_to_wram_64dpus
+[92m[1m/dev/dpu_rank38:[0m
+  16.000KB	    2     	  11.263MB/s	   1.387ms	dpu_copy_to_wram_64dpus
+  24.000KB	    1     	  13.869MB/s	   1.690ms	dpu_copy_to_wram_64dpus
+  52.750KB	    1     	 120.374MB/s	 427.947us	dpu_copy_to_wram_for_rank
+   2.625MB	    1     	  10.050MB/s	 261.192ms	dpu_copy_to_wram_64dpus
+   2.690MB	    1     	  88.084MB/s	  30.535ms	dpu_copy_to_wram_for_rank
+   1.500MB	    1     	  10.190MB/s	 147.207ms	dpu_copy_to_wram_64dpus
+   1.553MB	    1     	 120.956MB/s	  12.839ms	dpu_copy_to_wram_for_rank
+  28.000KB	    1     	  13.173MB/s	   2.076ms	dpu_copy_to_wram_64dpus
+[92m[1m/dev/dpu_rank39:[0m
+   2.690MB	    1     	 125.363MB/s	  21.455ms	dpu_copy_to_wram_for_rank
+   1.553MB	    1     	 121.483MB/s	  12.783ms	dpu_copy_to_wram_for_rank
+  24.000KB	    1     	  14.518MB/s	   1.614ms	dpu_copy_to_wram_64dpus
+   2.625MB	    1     	  10.272MB/s	 255.539ms	dpu_copy_to_wram_64dpus
+  16.000KB	    2     	  11.513MB/s	   1.357ms	dpu_copy_to_wram_64dpus
+  52.750KB	    1     	  83.420MB/s	 617.524us	dpu_copy_to_wram_for_rank
+   1.500MB	    1     	  11.527MB/s	 130.127ms	dpu_copy_to_wram_64dpus
+  28.000KB	    1     	  14.608MB/s	   1.872ms	dpu_copy_to_wram_64dpus
+[92m[1m/dev/dpu_rank4:[0m
+   2.690MB	    1     	 106.876MB/s	  25.167ms	dpu_copy_to_wram_for_rank
+  24.000KB	    1     	  11.487MB/s	   2.040ms	dpu_copy_to_wram_64dpus
+  52.750KB	    1     	 101.438MB/s	 507.833us	dpu_copy_to_wram_for_rank
+  28.000KB	    1     	  10.772MB/s	   2.538ms	dpu_copy_to_wram_64dpus
+   1.500MB	    1     	   9.851MB/s	 152.270ms	dpu_copy_to_wram_64dpus
+  16.000KB	    2     	   7.797MB/s	   2.004ms	dpu_copy_to_wram_64dpus
+   1.553MB	    1     	  58.523MB/s	  26.536ms	dpu_copy_to_wram_for_rank
+   2.625MB	    1     	  12.297MB/s	 213.465ms	dpu_copy_to_wram_64dpus
+[92m[1m/dev/dpu_rank5:[0m
+   2.625MB	    1     	   9.228MB/s	 284.462ms	dpu_copy_to_wram_64dpus
+   1.553MB	    1     	  72.306MB/s	  21.478ms	dpu_copy_to_wram_for_rank
+   2.690MB	    1     	  97.700MB/s	  27.530ms	dpu_copy_to_wram_for_rank
+  52.750KB	    1     	  71.755MB/s	 717.911us	dpu_copy_to_wram_for_rank
+  16.000KB	    2     	   7.791MB/s	   2.006ms	dpu_copy_to_wram_64dpus
+  28.000KB	    1     	  10.559MB/s	   2.590ms	dpu_copy_to_wram_64dpus
+   1.500MB	    1     	   9.455MB/s	 158.645ms	dpu_copy_to_wram_64dpus
+  24.000KB	    1     	  14.645MB/s	   1.600ms	dpu_copy_to_wram_64dpus
+[92m[1m/dev/dpu_rank6:[0m
+  28.000KB	    1     	  13.317MB/s	   2.053ms	dpu_copy_to_wram_64dpus
+   1.500MB	    1     	  10.296MB/s	 145.694ms	dpu_copy_to_wram_64dpus
+  52.750KB	    1     	  68.214MB/s	 755.174us	dpu_copy_to_wram_for_rank
+  16.000KB	    2     	   8.542MB/s	   1.829ms	dpu_copy_to_wram_64dpus
+   1.553MB	    1     	  56.345MB/s	  27.562ms	dpu_copy_to_wram_for_rank
+   2.625MB	    1     	  11.581MB/s	 226.674ms	dpu_copy_to_wram_64dpus
+  24.000KB	    1     	  14.299MB/s	   1.639ms	dpu_copy_to_wram_64dpus
+   2.690MB	    1     	  79.786MB/s	  33.711ms	dpu_copy_to_wram_for_rank
+[92m[1m/dev/dpu_rank7:[0m
+  16.000KB	    2     	   9.789MB/s	   1.596ms	dpu_copy_to_wram_64dpus
+  24.000KB	    1     	  14.894MB/s	   1.574ms	dpu_copy_to_wram_64dpus
+   2.690MB	    1     	 100.114MB/s	  26.866ms	dpu_copy_to_wram_for_rank
+   1.553MB	    1     	 125.465MB/s	  12.378ms	dpu_copy_to_wram_for_rank
+  52.750KB	    1     	 105.951MB/s	 486.201us	dpu_copy_to_wram_for_rank
+  28.000KB	    1     	  13.550MB/s	   2.018ms	dpu_copy_to_wram_64dpus
+   2.625MB	    1     	   9.974MB/s	 263.193ms	dpu_copy_to_wram_64dpus
+   1.500MB	    1     	   9.394MB/s	 159.675ms	dpu_copy_to_wram_64dpus
+[92m[1m/dev/dpu_rank8:[0m
+   1.553MB	    1     	 112.688MB/s	  13.781ms	dpu_copy_to_wram_for_rank
+   1.500MB	    1     	  10.464MB/s	 143.354ms	dpu_copy_to_wram_64dpus
+  24.000KB	    1     	  14.836MB/s	   1.580ms	dpu_copy_to_wram_64dpus
+  52.750KB	    1     	 102.341MB/s	 503.353us	dpu_copy_to_wram_for_rank
+  16.000KB	    2     	   9.694MB/s	   1.612ms	dpu_copy_to_wram_64dpus
+   2.690MB	    1     	 104.548MB/s	  25.727ms	dpu_copy_to_wram_for_rank
+  28.000KB	    1     	  13.271MB/s	   2.060ms	dpu_copy_to_wram_64dpus
+   2.625MB	    1     	  11.696MB/s	 224.431ms	dpu_copy_to_wram_64dpus
+[92m[1m/dev/dpu_rank9:[0m
+  24.000KB	    1     	  13.737MB/s	   1.706ms	dpu_copy_to_wram_64dpus
+  16.000KB	    2     	   9.511MB/s	   1.643ms	dpu_copy_to_wram_64dpus
+   1.500MB	    1     	  10.445MB/s	 143.616ms	dpu_copy_to_wram_64dpus
+  52.750KB	    1     	  67.977MB/s	 757.812us	dpu_copy_to_wram_for_rank
+   1.553MB	    1     	 116.467MB/s	  13.334ms	dpu_copy_to_wram_for_rank
+   2.625MB	    1     	  10.457MB/s	 251.036ms	dpu_copy_to_wram_64dpus
+   2.690MB	    1     	 125.701MB/s	  21.398ms	dpu_copy_to_wram_for_rank
+  28.000KB	    1     	  12.655MB/s	   2.161ms	dpu_copy_to_wram_64dpus
+[92m[1mAverage:[0m
+   2.690MB	    36    	  90.824MB/s	  29.614ms	dpu_copy_to_wram_for_rank
+   2.625MB	    36    	  12.007MB/s	 218.631ms	dpu_copy_to_wram_64dpus
+   1.553MB	    36    	  82.019MB/s	  18.934ms	dpu_copy_to_wram_for_rank
+  23.625KB	    4     	  11.120MB/s	   2.075ms	dpu_copy_to_wram_63dpus
+   1.477MB	    4     	  13.537MB/s	 109.074ms	dpu_copy_to_wram_63dpus
+  52.750KB	    36    	  74.401MB/s	 692.374us	dpu_copy_to_wram_for_rank
+  28.000KB	    36    	  11.314MB/s	   2.417ms	dpu_copy_to_wram_64dpus
+  24.000KB	    36    	  12.546MB/s	   1.868ms	dpu_copy_to_wram_64dpus
+   1.500MB	    36    	  11.956MB/s	 125.463ms	dpu_copy_to_wram_64dpus
+  16.000KB	    72    	   8.638MB/s	   1.809ms	dpu_copy_to_wram_64dpus
+   2.648MB	    4     	  87.255MB/s	  30.344ms	dpu_copy_to_wram_for_rank
+  51.926KB	    4     	  72.140MB/s	 702.922us	dpu_copy_to_wram_for_rank
+  27.562KB	    4     	  10.118MB/s	   2.660ms	dpu_copy_to_wram_63dpus
+  15.750KB	    8     	   7.846MB/s	   1.960ms	dpu_copy_to_wram_63dpus
+   2.584MB	    4     	  12.085MB/s	 213.814ms	dpu_copy_to_wram_63dpus
+   1.529MB	    4     	  87.272MB/s	  17.517ms	dpu_copy_to_wram_for_rank
+[31m[1m*** WRAM read ***[0m
+   size   	  number  	 bandwidth  	 duration 	function names
+[92m[1m/dev/dpu_rank0:[0m
+  24.000KB	    1     	  11.513MB/s	   2.036ms	dpu_copy_from_wram_64dpus
+  16.000KB	    1     	  10.230MB/s	   1.527ms	dpu_copy_from_wram_64dpus
+ 256.000B 	    1     	   2.551MB/s	  95.721us	dpu_copy_from_wram_64dpus
+[92m[1m/dev/dpu_rank1:[0m
+  24.000KB	    1     	  10.143MB/s	   2.311ms	dpu_copy_from_wram_64dpus
+ 256.000B 	    1     	   2.470MB/s	  98.832us	dpu_copy_from_wram_64dpus
+  16.000KB	    1     	  11.957MB/s	   1.307ms	dpu_copy_from_wram_64dpus
+[92m[1m/dev/dpu_rank10:[0m
+ 256.000B 	    1     	   2.452MB/s	  99.570us	dpu_copy_from_wram_64dpus
+  24.000KB	    1     	   9.871MB/s	   2.374ms	dpu_copy_from_wram_64dpus
+  16.000KB	    1     	  10.930MB/s	   1.430ms	dpu_copy_from_wram_64dpus
+[92m[1m/dev/dpu_rank11:[0m
+  24.000KB	    1     	  10.674MB/s	   2.196ms	dpu_copy_from_wram_64dpus
+ 256.000B 	    1     	   2.503MB/s	  97.527us	dpu_copy_from_wram_64dpus
+  16.000KB	    1     	  11.363MB/s	   1.375ms	dpu_copy_from_wram_64dpus
+[92m[1m/dev/dpu_rank12:[0m
+  16.000KB	    1     	  10.031MB/s	   1.558ms	dpu_copy_from_wram_64dpus
+ 256.000B 	    1     	   2.487MB/s	  98.170us	dpu_copy_from_wram_64dpus
+  24.000KB	    1     	   9.707MB/s	   2.415ms	dpu_copy_from_wram_64dpus
+[92m[1m/dev/dpu_rank13:[0m
+ 256.000B 	    1     	   2.469MB/s	  98.879us	dpu_copy_from_wram_64dpus
+  24.000KB	    1     	  10.589MB/s	   2.213ms	dpu_copy_from_wram_64dpus
+  16.000KB	    1     	   9.868MB/s	   1.583ms	dpu_copy_from_wram_64dpus
+[92m[1m/dev/dpu_rank14:[0m
+  23.625KB	    1     	   9.904MB/s	   2.329ms	dpu_copy_from_wram_63dpus
+ 252.000B 	    1     	   2.510MB/s	  95.759us	dpu_copy_from_wram_63dpus
+  15.750KB	    1     	   9.646MB/s	   1.594ms	dpu_copy_from_wram_63dpus
+[92m[1m/dev/dpu_rank15:[0m
+  16.000KB	    1     	  12.157MB/s	   1.285ms	dpu_copy_from_wram_64dpus
+  24.000KB	    1     	   9.845MB/s	   2.381ms	dpu_copy_from_wram_64dpus
+ 256.000B 	    1     	   2.592MB/s	  94.185us	dpu_copy_from_wram_64dpus
+[92m[1m/dev/dpu_rank16:[0m
+  16.000KB	    1     	   9.915MB/s	   1.576ms	dpu_copy_from_wram_64dpus
+  24.000KB	    1     	   9.953MB/s	   2.355ms	dpu_copy_from_wram_64dpus
+ 256.000B 	    1     	   2.247MB/s	 108.647us	dpu_copy_from_wram_64dpus
+[92m[1m/dev/dpu_rank17:[0m
+  23.625KB	    1     	  10.128MB/s	   2.278ms	dpu_copy_from_wram_63dpus
+  15.750KB	    1     	   9.807MB/s	   1.568ms	dpu_copy_from_wram_63dpus
+ 252.000B 	    1     	   2.384MB/s	 100.808us	dpu_copy_from_wram_63dpus
+[92m[1m/dev/dpu_rank18:[0m
+  24.000KB	    1     	  10.889MB/s	   2.152ms	dpu_copy_from_wram_64dpus
+  16.000KB	    1     	  11.952MB/s	   1.307ms	dpu_copy_from_wram_64dpus
+ 256.000B 	    1     	   2.414MB/s	 101.133us	dpu_copy_from_wram_64dpus
+[92m[1m/dev/dpu_rank19:[0m
+  16.000KB	    1     	  11.679MB/s	   1.338ms	dpu_copy_from_wram_64dpus
+  24.000KB	    1     	   9.624MB/s	   2.435ms	dpu_copy_from_wram_64dpus
+ 256.000B 	    1     	   2.593MB/s	  94.149us	dpu_copy_from_wram_64dpus
+[92m[1m/dev/dpu_rank2:[0m
+ 256.000B 	    1     	   2.520MB/s	  96.868us	dpu_copy_from_wram_64dpus
+  16.000KB	    1     	   9.954MB/s	   1.570ms	dpu_copy_from_wram_64dpus
+  24.000KB	    1     	  10.260MB/s	   2.284ms	dpu_copy_from_wram_64dpus
+[92m[1m/dev/dpu_rank20:[0m
+  24.000KB	    1     	  11.079MB/s	   2.116ms	dpu_copy_from_wram_64dpus
+ 256.000B 	    1     	   1.135MB/s	 215.108us	dpu_copy_from_wram_64dpus
+  16.000KB	    1     	  10.696MB/s	   1.461ms	dpu_copy_from_wram_64dpus
+[92m[1m/dev/dpu_rank21:[0m
+  16.000KB	    1     	  10.304MB/s	   1.516ms	dpu_copy_from_wram_64dpus
+ 256.000B 	    1     	   3.676MB/s	  66.422us	dpu_copy_from_wram_64dpus
+  24.000KB	    1     	   9.639MB/s	   2.432ms	dpu_copy_from_wram_64dpus
+[92m[1m/dev/dpu_rank22:[0m
+  24.000KB	    1     	   9.950MB/s	   2.355ms	dpu_copy_from_wram_64dpus
+  16.000KB	    1     	  11.479MB/s	   1.361ms	dpu_copy_from_wram_64dpus
+ 256.000B 	    1     	   2.527MB/s	  96.631us	dpu_copy_from_wram_64dpus
+[92m[1m/dev/dpu_rank23:[0m
+  24.000KB	    1     	  11.111MB/s	   2.109ms	dpu_copy_from_wram_64dpus
+  16.000KB	    1     	  10.557MB/s	   1.480ms	dpu_copy_from_wram_64dpus
+ 256.000B 	    1     	   2.588MB/s	  94.339us	dpu_copy_from_wram_64dpus
+[92m[1m/dev/dpu_rank24:[0m
+  16.000KB	    1     	   9.807MB/s	   1.593ms	dpu_copy_from_wram_64dpus
+ 256.000B 	    1     	   2.513MB/s	  97.154us	dpu_copy_from_wram_64dpus
+  24.000KB	    1     	   9.560MB/s	   2.452ms	dpu_copy_from_wram_64dpus
+[92m[1m/dev/dpu_rank25:[0m
+ 256.000B 	    1     	   2.555MB/s	  95.541us	dpu_copy_from_wram_64dpus
+  16.000KB	    1     	   9.706MB/s	   1.610ms	dpu_copy_from_wram_64dpus
+  24.000KB	    1     	   9.608MB/s	   2.439ms	dpu_copy_from_wram_64dpus
+[92m[1m/dev/dpu_rank26:[0m
+  16.000KB	    1     	  10.507MB/s	   1.487ms	dpu_copy_from_wram_64dpus
+ 256.000B 	    1     	   2.585MB/s	  94.450us	dpu_copy_from_wram_64dpus
+  24.000KB	    1     	   9.775MB/s	   2.398ms	dpu_copy_from_wram_64dpus
+[92m[1m/dev/dpu_rank27:[0m
+  15.750KB	    1     	  11.185MB/s	   1.375ms	dpu_copy_from_wram_63dpus
+  23.625KB	    1     	   9.551MB/s	   2.416ms	dpu_copy_from_wram_63dpus
+ 252.000B 	    1     	   2.631MB/s	  91.333us	dpu_copy_from_wram_63dpus
+[92m[1m/dev/dpu_rank28:[0m
+ 256.000B 	    1     	   2.694MB/s	  90.625us	dpu_copy_from_wram_64dpus
+  24.000KB	    1     	   9.841MB/s	   2.382ms	dpu_copy_from_wram_64dpus
+  16.000KB	    1     	  10.641MB/s	   1.468ms	dpu_copy_from_wram_64dpus
+[92m[1m/dev/dpu_rank29:[0m
+  24.000KB	    1     	  10.107MB/s	   2.319ms	dpu_copy_from_wram_64dpus
+  16.000KB	    1     	  10.182MB/s	   1.535ms	dpu_copy_from_wram_64dpus
+ 256.000B 	    1     	   2.621MB/s	  93.165us	dpu_copy_from_wram_64dpus
+[92m[1m/dev/dpu_rank3:[0m
+  24.000KB	    1     	   9.765MB/s	   2.400ms	dpu_copy_from_wram_64dpus
+ 256.000B 	    1     	   2.558MB/s	  95.435us	dpu_copy_from_wram_64dpus
+  16.000KB	    1     	  10.045MB/s	   1.555ms	dpu_copy_from_wram_64dpus
+[92m[1m/dev/dpu_rank30:[0m
+  24.000KB	    1     	  11.358MB/s	   2.064ms	dpu_copy_from_wram_64dpus
+ 256.000B 	    1     	   4.187MB/s	  58.312us	dpu_copy_from_wram_64dpus
+  16.000KB	    1     	  10.211MB/s	   1.530ms	dpu_copy_from_wram_64dpus
+[92m[1m/dev/dpu_rank31:[0m
+ 252.000B 	    1     	   2.572MB/s	  93.443us	dpu_copy_from_wram_63dpus
+  23.625KB	    1     	   9.622MB/s	   2.398ms	dpu_copy_from_wram_63dpus
+  15.750KB	    1     	   9.823MB/s	   1.566ms	dpu_copy_from_wram_63dpus
+[92m[1m/dev/dpu_rank32:[0m
+  24.000KB	    1     	   9.724MB/s	   2.410ms	dpu_copy_from_wram_64dpus
+ 256.000B 	    1     	   2.596MB/s	  94.060us	dpu_copy_from_wram_64dpus
+  16.000KB	    1     	   9.717MB/s	   1.608ms	dpu_copy_from_wram_64dpus
+[92m[1m/dev/dpu_rank33:[0m
+  24.000KB	    1     	   9.845MB/s	   2.381ms	dpu_copy_from_wram_64dpus
+  16.000KB	    1     	   9.830MB/s	   1.590ms	dpu_copy_from_wram_64dpus
+ 256.000B 	    1     	   2.650MB/s	  92.145us	dpu_copy_from_wram_64dpus
+[92m[1m/dev/dpu_rank34:[0m
+  24.000KB	    1     	  11.284MB/s	   2.077ms	dpu_copy_from_wram_64dpus
+  16.000KB	    1     	  11.469MB/s	   1.362ms	dpu_copy_from_wram_64dpus
+ 256.000B 	    1     	   2.671MB/s	  91.409us	dpu_copy_from_wram_64dpus
+[92m[1m/dev/dpu_rank35:[0m
+ 256.000B 	    1     	   2.646MB/s	  92.268us	dpu_copy_from_wram_64dpus
+  16.000KB	    1     	  10.194MB/s	   1.533ms	dpu_copy_from_wram_64dpus
+  24.000KB	    1     	   9.710MB/s	   2.414ms	dpu_copy_from_wram_64dpus
+[92m[1m/dev/dpu_rank36:[0m
+  24.000KB	    1     	  11.964MB/s	   1.959ms	dpu_copy_from_wram_64dpus
+  16.000KB	    1     	  10.883MB/s	   1.436ms	dpu_copy_from_wram_64dpus
+ 256.000B 	    1     	   2.642MB/s	  92.408us	dpu_copy_from_wram_64dpus
+[92m[1m/dev/dpu_rank37:[0m
+  24.000KB	    1     	  11.857MB/s	   1.977ms	dpu_copy_from_wram_64dpus
+  16.000KB	    1     	  10.824MB/s	   1.444ms	dpu_copy_from_wram_64dpus
+ 256.000B 	    1     	   4.205MB/s	  58.064us	dpu_copy_from_wram_64dpus
+[92m[1m/dev/dpu_rank38:[0m
+  24.000KB	    1     	  11.790MB/s	   1.988ms	dpu_copy_from_wram_64dpus
+ 256.000B 	    1     	   4.105MB/s	  59.480us	dpu_copy_from_wram_64dpus
+  16.000KB	    1     	  10.517MB/s	   1.486ms	dpu_copy_from_wram_64dpus
+[92m[1m/dev/dpu_rank39:[0m
+  24.000KB	    1     	  12.057MB/s	   1.944ms	dpu_copy_from_wram_64dpus
+ 256.000B 	    1     	   2.855MB/s	  85.519us	dpu_copy_from_wram_64dpus
+  16.000KB	    1     	  10.720MB/s	   1.457ms	dpu_copy_from_wram_64dpus
+[92m[1m/dev/dpu_rank4:[0m
+ 256.000B 	    1     	   2.510MB/s	  97.267us	dpu_copy_from_wram_64dpus
+  24.000KB	    1     	   9.690MB/s	   2.419ms	dpu_copy_from_wram_64dpus
+  16.000KB	    1     	   9.884MB/s	   1.581ms	dpu_copy_from_wram_64dpus
+[92m[1m/dev/dpu_rank5:[0m
+ 256.000B 	    1     	   2.479MB/s	  98.492us	dpu_copy_from_wram_64dpus
+  16.000KB	    1     	   9.753MB/s	   1.602ms	dpu_copy_from_wram_64dpus
+  24.000KB	    1     	   9.675MB/s	   2.422ms	dpu_copy_from_wram_64dpus
+[92m[1m/dev/dpu_rank6:[0m
+  24.000KB	    1     	  11.733MB/s	   1.998ms	dpu_copy_from_wram_64dpus
+  16.000KB	    1     	  10.841MB/s	   1.441ms	dpu_copy_from_wram_64dpus
+ 256.000B 	    1     	   2.655MB/s	  91.953us	dpu_copy_from_wram_64dpus
+[92m[1m/dev/dpu_rank7:[0m
+  24.000KB	    1     	  11.273MB/s	   2.079ms	dpu_copy_from_wram_64dpus
+ 256.000B 	    1     	   2.615MB/s	  93.376us	dpu_copy_from_wram_64dpus
+  16.000KB	    1     	  12.054MB/s	   1.296ms	dpu_copy_from_wram_64dpus
+[92m[1m/dev/dpu_rank8:[0m
+  24.000KB	    1     	  12.232MB/s	   1.916ms	dpu_copy_from_wram_64dpus
+ 256.000B 	    1     	   2.589MB/s	  94.292us	dpu_copy_from_wram_64dpus
+  16.000KB	    1     	  11.931MB/s	   1.310ms	dpu_copy_from_wram_64dpus
+[92m[1m/dev/dpu_rank9:[0m
+  24.000KB	    1     	  12.038MB/s	   1.947ms	dpu_copy_from_wram_64dpus
+  16.000KB	    1     	  14.075MB/s	   1.110ms	dpu_copy_from_wram_64dpus
+ 256.000B 	    1     	   2.542MB/s	  96.049us	dpu_copy_from_wram_64dpus
+[92m[1mAverage:[0m
+  24.000KB	    36    	  10.475MB/s	   2.237ms	dpu_copy_from_wram_64dpus
+  16.000KB	    36    	  10.672MB/s	   1.464ms	dpu_copy_from_wram_64dpus
+ 256.000B 	    36    	   2.572MB/s	  94.935us	dpu_copy_from_wram_64dpus
+  23.625KB	    4     	   9.796MB/s	   2.355ms	dpu_copy_from_wram_63dpus
+ 252.000B 	    4     	   2.521MB/s	  95.336us	dpu_copy_from_wram_63dpus
+  15.750KB	    4     	  10.080MB/s	   1.526ms	dpu_copy_from_wram_63dpus
+[31m[1m*** IRAM write ***[0m
+   size   	  number  	 bandwidth  	 duration 	function names
+[92m[1m/dev/dpu_rank0:[0m
+  73.250KB	    1     	  21.039MB/s	   3.400ms	dpu_copy_to_iram_for_rank
+  73.375KB	    1     	  18.901MB/s	   3.791ms	dpu_copy_to_iram_for_rank
+  77.688KB	    1     	  20.319MB/s	   3.734ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank1:[0m
+  77.688KB	    1     	  20.320MB/s	   3.734ms	dpu_copy_to_iram_for_rank
+  73.250KB	    1     	  18.395MB/s	   3.889ms	dpu_copy_to_iram_for_rank
+  73.375KB	    1     	  18.481MB/s	   3.877ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank10:[0m
+  73.375KB	    1     	  18.814MB/s	   3.809ms	dpu_copy_to_iram_for_rank
+  73.250KB	    1     	  19.060MB/s	   3.753ms	dpu_copy_to_iram_for_rank
+  77.688KB	    1     	  19.047MB/s	   3.983ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank11:[0m
+  73.250KB	    1     	  19.910MB/s	   3.593ms	dpu_copy_to_iram_for_rank
+  77.688KB	    1     	  20.039MB/s	   3.786ms	dpu_copy_to_iram_for_rank
+  73.375KB	    1     	  18.050MB/s	   3.970ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank12:[0m
+  73.375KB	    1     	  18.989MB/s	   3.774ms	dpu_copy_to_iram_for_rank
+  77.688KB	    1     	  19.824MB/s	   3.827ms	dpu_copy_to_iram_for_rank
+  73.250KB	    1     	  20.272MB/s	   3.529ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank13:[0m
+  73.375KB	    1     	  19.090MB/s	   3.754ms	dpu_copy_to_iram_for_rank
+  73.250KB	    1     	  18.075MB/s	   3.958ms	dpu_copy_to_iram_for_rank
+  77.688KB	    1     	  27.778MB/s	   2.731ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank14:[0m
+  72.229KB	    1     	  29.931MB/s	   2.357ms	dpu_copy_to_iram_for_rank
+  72.105KB	    1     	  29.815MB/s	   2.362ms	dpu_copy_to_iram_for_rank
+  76.474KB	    1     	  19.765MB/s	   3.778ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank15:[0m
+  73.375KB	    1     	  19.939MB/s	   3.594ms	dpu_copy_to_iram_for_rank
+  73.250KB	    1     	  20.876MB/s	   3.427ms	dpu_copy_to_iram_for_rank
+  77.688KB	    1     	  20.761MB/s	   3.654ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank16:[0m
+  77.688KB	    1     	   8.743MB/s	   8.677ms	dpu_copy_to_iram_for_rank
+  73.375KB	    1     	  18.650MB/s	   3.842ms	dpu_copy_to_iram_for_rank
+  73.250KB	    1     	  19.586MB/s	   3.652ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank17:[0m
+  72.229KB	    1     	  18.190MB/s	   3.878ms	dpu_copy_to_iram_for_rank
+  76.474KB	    1     	  20.021MB/s	   3.730ms	dpu_copy_to_iram_for_rank
+  72.105KB	    1     	  20.113MB/s	   3.501ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank18:[0m
+  77.688KB	    1     	  19.883MB/s	   3.816ms	dpu_copy_to_iram_for_rank
+  73.375KB	    1     	  19.090MB/s	   3.753ms	dpu_copy_to_iram_for_rank
+  73.250KB	    1     	  19.557MB/s	   3.658ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank19:[0m
+  73.375KB	    1     	  19.720MB/s	   3.634ms	dpu_copy_to_iram_for_rank
+  77.688KB	    1     	  18.333MB/s	   4.138ms	dpu_copy_to_iram_for_rank
+  73.250KB	    1     	  28.238MB/s	   2.533ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank2:[0m
+  73.375KB	    1     	  20.401MB/s	   3.512ms	dpu_copy_to_iram_for_rank
+  73.250KB	    1     	  24.947MB/s	   2.867ms	dpu_copy_to_iram_for_rank
+  77.688KB	    1     	  20.577MB/s	   3.687ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank20:[0m
+  73.375KB	    1     	  20.116MB/s	   3.562ms	dpu_copy_to_iram_for_rank
+  73.250KB	    1     	  18.156MB/s	   3.940ms	dpu_copy_to_iram_for_rank
+  77.688KB	    1     	  18.779MB/s	   4.040ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank21:[0m
+  77.688KB	    1     	  19.532MB/s	   3.884ms	dpu_copy_to_iram_for_rank
+  73.250KB	    1     	  22.186MB/s	   3.224ms	dpu_copy_to_iram_for_rank
+  73.375KB	    1     	  18.318MB/s	   3.912ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank22:[0m
+  77.688KB	    1     	  20.654MB/s	   3.673ms	dpu_copy_to_iram_for_rank
+  73.250KB	    1     	  18.779MB/s	   3.809ms	dpu_copy_to_iram_for_rank
+  73.375KB	    1     	  26.556MB/s	   2.698ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank23:[0m
+  73.250KB	    1     	  18.352MB/s	   3.898ms	dpu_copy_to_iram_for_rank
+  77.688KB	    1     	  18.283MB/s	   4.150ms	dpu_copy_to_iram_for_rank
+  73.375KB	    1     	  18.003MB/s	   3.980ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank24:[0m
+  73.250KB	    1     	  19.477MB/s	   3.673ms	dpu_copy_to_iram_for_rank
+  77.688KB	    1     	  18.559MB/s	   4.088ms	dpu_copy_to_iram_for_rank
+  73.375KB	    1     	  20.595MB/s	   3.479ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank25:[0m
+  73.375KB	    1     	  30.927MB/s	   2.317ms	dpu_copy_to_iram_for_rank
+  77.688KB	    1     	  18.502MB/s	   4.100ms	dpu_copy_to_iram_for_rank
+  73.250KB	    1     	  20.367MB/s	   3.512ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank26:[0m
+  77.688KB	    1     	  18.497MB/s	   4.101ms	dpu_copy_to_iram_for_rank
+  73.375KB	    1     	  19.167MB/s	   3.738ms	dpu_copy_to_iram_for_rank
+  73.250KB	    1     	  19.155MB/s	   3.734ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank27:[0m
+  72.105KB	    1     	  19.176MB/s	   3.672ms	dpu_copy_to_iram_for_rank
+  72.229KB	    1     	  19.229MB/s	   3.668ms	dpu_copy_to_iram_for_rank
+  76.474KB	    1     	  30.315MB/s	   2.464ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank28:[0m
+  73.250KB	    1     	  19.419MB/s	   3.684ms	dpu_copy_to_iram_for_rank
+  73.375KB	    1     	  30.955MB/s	   2.315ms	dpu_copy_to_iram_for_rank
+  77.688KB	    1     	   9.360MB/s	   8.106ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank29:[0m
+  73.250KB	    1     	  18.463MB/s	   3.874ms	dpu_copy_to_iram_for_rank
+  77.688KB	    1     	  18.695MB/s	   4.058ms	dpu_copy_to_iram_for_rank
+  73.375KB	    1     	  20.941MB/s	   3.422ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank3:[0m
+  77.688KB	    1     	  20.420MB/s	   3.715ms	dpu_copy_to_iram_for_rank
+  73.375KB	    1     	  18.784MB/s	   3.815ms	dpu_copy_to_iram_for_rank
+  73.250KB	    1     	  19.009MB/s	   3.763ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank30:[0m
+  73.250KB	    1     	  18.230MB/s	   3.924ms	dpu_copy_to_iram_for_rank
+  77.688KB	    1     	  18.902MB/s	   4.014ms	dpu_copy_to_iram_for_rank
+  73.375KB	    1     	  18.581MB/s	   3.856ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank31:[0m
+  72.229KB	    1     	  20.154MB/s	   3.500ms	dpu_copy_to_iram_for_rank
+  76.474KB	    1     	  19.802MB/s	   3.771ms	dpu_copy_to_iram_for_rank
+  72.105KB	    1     	  30.224MB/s	   2.330ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank32:[0m
+  73.375KB	    1     	  20.051MB/s	   3.574ms	dpu_copy_to_iram_for_rank
+  77.688KB	    1     	  18.688MB/s	   4.060ms	dpu_copy_to_iram_for_rank
+  73.250KB	    1     	  18.544MB/s	   3.858ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank33:[0m
+  77.688KB	    1     	  19.869MB/s	   3.818ms	dpu_copy_to_iram_for_rank
+  73.375KB	    1     	  18.348MB/s	   3.905ms	dpu_copy_to_iram_for_rank
+  73.250KB	    1     	  30.902MB/s	   2.315ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank34:[0m
+  77.688KB	    1     	  19.203MB/s	   3.951ms	dpu_copy_to_iram_for_rank
+  73.250KB	    1     	  19.713MB/s	   3.629ms	dpu_copy_to_iram_for_rank
+  73.375KB	    1     	  18.855MB/s	   3.800ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank35:[0m
+  73.250KB	    1     	  18.511MB/s	   3.864ms	dpu_copy_to_iram_for_rank
+  73.375KB	    1     	  19.624MB/s	   3.651ms	dpu_copy_to_iram_for_rank
+  77.688KB	    1     	  30.898MB/s	   2.455ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank36:[0m
+  73.375KB	    1     	  20.635MB/s	   3.473ms	dpu_copy_to_iram_for_rank
+  73.250KB	    1     	  19.769MB/s	   3.619ms	dpu_copy_to_iram_for_rank
+  77.688KB	    1     	  18.732MB/s	   4.050ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank37:[0m
+  73.250KB	    1     	  20.471MB/s	   3.494ms	dpu_copy_to_iram_for_rank
+  73.375KB	    1     	  20.937MB/s	   3.422ms	dpu_copy_to_iram_for_rank
+  77.688KB	    1     	  30.767MB/s	   2.466ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank38:[0m
+  73.375KB	    1     	  20.212MB/s	   3.545ms	dpu_copy_to_iram_for_rank
+  77.688KB	    1     	  30.906MB/s	   2.455ms	dpu_copy_to_iram_for_rank
+  73.250KB	    1     	  30.924MB/s	   2.313ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank39:[0m
+  73.375KB	    1     	  34.033MB/s	   2.105ms	dpu_copy_to_iram_for_rank
+  77.688KB	    1     	  21.701MB/s	   3.496ms	dpu_copy_to_iram_for_rank
+  73.250KB	    1     	  30.889MB/s	   2.316ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank4:[0m
+  77.688KB	    1     	  27.653MB/s	   2.744ms	dpu_copy_to_iram_for_rank
+  73.375KB	    1     	  26.807MB/s	   2.673ms	dpu_copy_to_iram_for_rank
+  73.250KB	    1     	  20.009MB/s	   3.575ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank5:[0m
+  73.250KB	    1     	  19.840MB/s	   3.606ms	dpu_copy_to_iram_for_rank
+  73.375KB	    1     	  19.055MB/s	   3.760ms	dpu_copy_to_iram_for_rank
+  77.688KB	    1     	  18.403MB/s	   4.123ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank6:[0m
+  77.688KB	    1     	  20.582MB/s	   3.686ms	dpu_copy_to_iram_for_rank
+  73.250KB	    1     	  20.637MB/s	   3.466ms	dpu_copy_to_iram_for_rank
+  73.375KB	    1     	  20.010MB/s	   3.581ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank7:[0m
+  77.688KB	    1     	  27.892MB/s	   2.720ms	dpu_copy_to_iram_for_rank
+  73.375KB	    1     	  25.049MB/s	   2.861ms	dpu_copy_to_iram_for_rank
+  73.250KB	    1     	  30.969MB/s	   2.310ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank8:[0m
+  77.688KB	    1     	  26.610MB/s	   2.851ms	dpu_copy_to_iram_for_rank
+  73.250KB	    1     	  25.648MB/s	   2.789ms	dpu_copy_to_iram_for_rank
+  73.375KB	    1     	  24.450MB/s	   2.931ms	dpu_copy_to_iram_for_rank
+[92m[1m/dev/dpu_rank9:[0m
+  73.250KB	    1     	  25.201MB/s	   2.839ms	dpu_copy_to_iram_for_rank
+  77.688KB	    1     	  21.063MB/s	   3.602ms	dpu_copy_to_iram_for_rank
+  73.375KB	    1     	  26.672MB/s	   2.687ms	dpu_copy_to_iram_for_rank
+[92m[1mAverage:[0m
+  73.375KB	    36    	  20.741MB/s	   3.455ms	dpu_copy_to_iram_for_rank
+  73.250KB	    36    	  20.888MB/s	   3.425ms	dpu_copy_to_iram_for_rank
+  77.688KB	    36    	  19.485MB/s	   3.894ms	dpu_copy_to_iram_for_rank
+  72.229KB	    4     	  21.052MB/s	   3.351ms	dpu_copy_to_iram_for_rank
+  72.105KB	    4     	  23.740MB/s	   2.966ms	dpu_copy_to_iram_for_rank
+  76.474KB	    4     	  21.736MB/s	   3.436ms	dpu_copy_to_iram_for_rank
