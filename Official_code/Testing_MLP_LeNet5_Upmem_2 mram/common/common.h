@@ -3,11 +3,12 @@
 
 #include <stdint.h>
 
-#define GEMM 0
+#define GEMM 1
 #define NR_DPUS 64
+#define MULTIPLE 3
 
 #if GEMM == 1
-    #define TRAINING_SIZE (NR_DPUS*2)
+    #define TRAINING_SIZE (NR_DPUS*MULTIPLE)
 #else
     #define TRAINING_SIZE NR_DPUS
 #endif

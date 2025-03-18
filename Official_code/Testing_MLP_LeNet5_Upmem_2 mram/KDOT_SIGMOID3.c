@@ -10,10 +10,10 @@
 
 __mram T d_l2[(TRAINING_SIZE/NR_DPUS)*L2_SIZE];
 __mram T d_W2[L2_SIZE*OUTPUT_SIZE];
-#if GEMM == 1
+#if GEMM == 1 && MULTIPLE % 2 == 0
 	__mram T d_pred[(TRAINING_SIZE/NR_DPUS)*OUTPUT_SIZE];
 #else
-	__mram T d_pred[(TRAINING_SIZE/NR_DPUS)*OUTPUT_SIZE*2];
+	__mram T d_pred[((TRAINING_SIZE/NR_DPUS)+1)*OUTPUT_SIZE];
 #endif
 
 
