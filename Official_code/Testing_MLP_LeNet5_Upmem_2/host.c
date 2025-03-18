@@ -104,7 +104,7 @@ void Run_KDot_Sigmoid_L1(T *m1, T *m2, T *m3, struct dpu_set_t set, struct dpu_s
 		fprintf(file2, "\n");
 	}
 
-	fclose(file2);
+	fclose(file2);7
 
 	Timer timer;
 	start(&timer, 0, 0);

@@ -431,17 +431,17 @@ void Run_KDot_ReLU_Output(T *m1, T *m2, T *m3, struct dpu_set_t set, struct dpu_
 
 
 	DPU_FOREACH(set,dpu,each_dpu){
-		#if GEMM == 1
+		#if GEMM == 1 && MULTIPLE % 2 == 0
 			DPU_ASSERT(dpu_prepare_xfer(dpu, &m3[each_dpu*(TRAINING_SIZE/NR_DPUS)*OUTPUT_SIZE]));
 		#else
-			DPU_ASSERT(dpu_prepare_xfer(dpu, &m3[2*each_dpu*(TRAINING_SIZE/NR_DPUS)*OUTPUT_SIZE]));
+			DPU_ASSERT(dpu_prepare_xfer(dpu, &m3[each_dpu*((TRAINING_SIZE/NR_DPUS)+1)*OUTPUT_SIZE]));
 		#endif
 	}
 	//printf("for ended with line: %d\n", current_line);	
-	#if GEMM == 1
+	#if GEMM == 1 && MULTIPLE % 2 == 0
 		DPU_ASSERT(dpu_push_xfer(set, DPU_XFER_FROM_DPU, m3_name, 0, sizeof(T) *  (TRAINING_SIZE/NR_DPUS)*OUTPUT_SIZE, DPU_XFER_DEFAULT));
 	#else
-		DPU_ASSERT(dpu_push_xfer(set, DPU_XFER_FROM_DPU, m3_name, 0, 2 * sizeof(T) *  (TRAINING_SIZE/NR_DPUS)*OUTPUT_SIZE, DPU_XFER_DEFAULT));
+		DPU_ASSERT(dpu_push_xfer(set, DPU_XFER_FROM_DPU, m3_name, 0, sizeof(T) *  ((TRAINING_SIZE/NR_DPUS)+1)*OUTPUT_SIZE, DPU_XFER_DEFAULT));
 	#endif
 	stop(&timer, 0);
 	printf("L3 time (ms): ");
@@ -457,17 +457,34 @@ void Run_KDot_ReLU_Output(T *m1, T *m2, T *m3, struct dpu_set_t set, struct dpu_
 	}
 
 	#if GEMM == 1
-		for (int i = 0; i < TRAINING_SIZE; i=i+1) {
-			for (int j = 0; j < OUTPUT_SIZE; j++) {
-				#if IS_FLOAT == 1
-					fprintf(file3, "%f ", m3[i*(OUTPUT_SIZE)+j]);
-				#endif
-				#if IS_INT == 1
-					fprintf(file3, "%d ", m3[i*(OUTPUT_SIZE)+j]);
-				#endif
+		#if MULTIPLE % 2 == 0
+			for (int i = 0; i < TRAINING_SIZE; i=i+1) {
+				for (int j = 0; j < OUTPUT_SIZE; j++) {
+					#if IS_FLOAT == 1
+						fprintf(file3, "%f ", m3[i*(OUTPUT_SIZE)+j]);
+					#endif
+					#if IS_INT == 1
+						fprintf(file3, "%d ", m3[i*(OUTPUT_SIZE)+j]);
+					#endif
+				}
+				fprintf(file3, "\n");
 			}
-			fprintf(file3, "\n");
-		}
+		#else
+			for (int i = 0; i < NR_DPUS*(MULTIPLE+1); i=i+1) {
+				if(i==0 || i%(MULTIPLE+1)!=MULTIPLE){
+					for (int j = 0; j < OUTPUT_SIZE; j++) {
+						#if IS_FLOAT == 1
+							// printf("it=%d, rem=%d\n",i, i%(MULTIPLE+1) );
+							fprintf(file3, "%f ", m3[i*(OUTPUT_SIZE)+j]);
+						#endif
+						#if IS_INT == 1
+							fprintf(file3, "%d ", m3[i*(OUTPUT_SIZE)+j]);
+						#endif
+					}
+				fprintf(file3, "\n");
+				}
+			}
+		#endif
 	#else
 		for (int i = 0; i < TRAINING_SIZE*2; i=i+2) {
 			for (int j = 0; j < OUTPUT_SIZE; j++) {
@@ -562,11 +579,14 @@ int main(){
 
 	//PRED AND PRED_DELTA
 	#if GEMM == 1
-		size_t y_size = y_dim*sizeof(T);
+		#if MULTIPLE % 2 == 0
+			size_t y_size = y_dim*sizeof(T);
+		#else
+			size_t y_size = NR_DPUS*(MULTIPLE+1)*sizeof(T);
+		#endif
 	#else
 		size_t y_size = y_dim*sizeof(T)*2;
 	#endif
-
 	T* h_pred = (T*)malloc(y_size);
 
  	Timer timer;
