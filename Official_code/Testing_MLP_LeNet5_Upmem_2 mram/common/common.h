@@ -4,7 +4,7 @@
 #include <stdint.h>
 
 #define GEMM 1
-#define NR_DPUS 64
+#define NR_DPUS 2543
 #define MULTIPLE 3
 
 #if GEMM == 1
@@ -24,10 +24,9 @@
 
 
 
-#define T float
+#define T int
 
-#define IS_FLOAT 1
-#define IS_INT 0
-
+#define IS_FLOAT 0
+#define IS_INT 1
 
 #endif /* __COMMON_H__ */
