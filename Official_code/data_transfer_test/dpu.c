@@ -9,7 +9,7 @@
 // #include "host.c"
 
 
-__dma_aligned T d_X[SIZE];
+__host __dma_aligned T d_X[SIZE];
 
 BARRIER_INIT(my_barrier, NR_TASKLETS); //syncronization
 
