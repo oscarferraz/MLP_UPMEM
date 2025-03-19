@@ -27,6 +27,6 @@ do
     fi
 
     echo "Iteration $i"
-    dpu-profiling functions -o MRAMchrometf$i.json -A -- ./host
+    dpu-profiling functions -o 2048DPU_WRAMchrometf$i.json -A -- ./host
 
 done

@@ -3,9 +3,9 @@
 
 #include <stdint.h>
 
- #define SIZE 8*2
+//  #define SIZE 8*2
 
-#define NR_DPUS 1
+#define NR_DPUS 2048
 
 
 #define T int
