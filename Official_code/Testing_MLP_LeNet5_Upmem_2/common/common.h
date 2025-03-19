@@ -4,7 +4,7 @@
 #include <stdint.h>
 
 #define GEMM 0
-#define NR_DPUS 64
+#define NR_DPUS 1
 
 #if GEMM == 1
     #define TRAINING_SIZE (NR_DPUS*2)

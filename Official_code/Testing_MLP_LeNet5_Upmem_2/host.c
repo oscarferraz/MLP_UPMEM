@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdlib.h>s
+#include <time.h>
 #include <dpu.h>
 #include "common/common.h"
 #include "common/timer.h"
@@ -8,6 +9,7 @@
 #define KDOT_SIGMOID2_BINARY "KDOT_SIGMOID2"
 #define KDOT_SIGMOID3_BINARY "KDOT_SIGMOID3"
 
+
 int Ceil(float a)
 {
     return(a > (int) a) ? (a+1) : (a);
@@ -15,6 +17,7 @@ int Ceil(float a)
 
 int alloc_dpus(struct dpu_set_t *set, uint32_t *nr_dpus)
 {
+	
 	DPU_ASSERT(dpu_alloc(NR_DPUS, NULL, set));
 	DPU_ASSERT(dpu_get_nr_dpus(*set, nr_dpus));
 	printf("Number of DPUs allocated=%d\n", nr_dpus[0]);
@@ -104,7 +107,7 @@ void Run_KDot_Sigmoid_L1(T *m1, T *m2, T *m3, struct dpu_set_t set, struct dpu_s
 		fprintf(file2, "\n");
 	}
 
-	fclose(file2);7
+	fclose(file2);
 
 	Timer timer;
 	start(&timer, 0, 0);
@@ -474,12 +477,14 @@ int main(){
 	printf("L2 size=%lu bytes\n", sizeof(T)*(TRAINING_SIZE/NR_DPUS)*L1_SIZE + sizeof(T)*L1_SIZE*L2_SIZE + sizeof(T)*(TRAINING_SIZE/NR_DPUS)*L2_SIZE );
 	printf("L3 size=%lu bytes\n", sizeof(T)*(TRAINING_SIZE/NR_DPUS)*L2_SIZE + sizeof(T)*L2_SIZE*OUTPUT_SIZE + sizeof(T)*(TRAINING_SIZE/NR_DPUS)*OUTPUT_SIZE );
 	
-	
+	srand(1);
+
 	T* h_X = (T*)malloc(TRAINING_SIZE*TRAINING_DIM*sizeof(T));
 	for(int i = 0; i < TRAINING_SIZE*TRAINING_DIM; i++){
 		// h_X[i] = ((T)rand()/(T)(RAND_MAX))*0.0;
 		#if IS_FLOAT == 1
-			h_X[i] = ((T)0.02);
+			// h_X[i] = ((T)0.02);
+			h_X[i] = ((T)rand()/(T)(RAND_MAX))*2.0;
 		#endif
 		#if IS_INT == 1
 			h_X[i] = ((T)1);
@@ -492,12 +497,15 @@ int main(){
 	for(int i = 0; i < TRAINING_DIM*L1_SIZE; i++){
 		// h_X[i] = ((T)rand()/(T)(RAND_MAX))*0.0;
 		#if IS_FLOAT == 1
-			h_W0[i] = ((T)0.03);
+			// h_W0[i] = ((T)0.03);
+			h_X[i] = ((T)rand()/(T)(RAND_MAX))*2.0;
 		#endif
 		#if IS_INT == 1
 			h_W0[i] = ((T)2);
 		#endif
 	}
+
+	
 	
 	//LAYER_1
 	size_t L1_size = TRAINING_SIZE*L1_SIZE*sizeof(T);
@@ -511,7 +519,8 @@ int main(){
 	for(int i = 0; i < L1_SIZE*L2_SIZE; i++){
 		// h_W1[i] = ((T)rand()/(T)(RAND_MAX))*0.0;
 		#if IS_FLOAT == 1
-			h_W1[i] = ((T)0.04);
+			h_W1[i] = ((T)rand()/(T)(RAND_MAX))*2.0;
+			// h_W1[i] = ((T)0.04);
 		#endif
 		#if IS_INT == 1
 			h_W1[i] = ((T)2);
@@ -530,13 +539,15 @@ int main(){
 	for(int i = 0; i < L2_SIZE*OUTPUT_SIZE; i++){
 		// h_W2[i] = ((T)rand()/(T)(RAND_MAX))*0.0;
 		#if IS_FLOAT == 1
-			h_W2[i] = ((T)0.01);
+			// h_W2[i] = ((T)0.01);
+			h_W2[i] = ((T)rand()/(T)(RAND_MAX))*2.0;
 		#endif
 		#if IS_INT == 1
 			h_W2[i] = ((T)2);
 		#endif
 	}
 
+	
 
 	//PRED AND PRED_DELTA
 	size_t y_size = y_dim*sizeof(T);
@@ -546,6 +557,7 @@ int main(){
 	int warmup = 0;
 	int reps = 1;
 
+	
 	//Allocate set of DPUs
 	struct dpu_set_t set, dpu;
 	uint32_t nr_dpus, each_dpu;
